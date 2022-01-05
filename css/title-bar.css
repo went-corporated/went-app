@@ -1,0 +1,132 @@
+.navbar{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 21px;
+    margin: 0; padding: 0;
+    /* padding-left: 25px; padding-right: 25px; */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+    /* border-bottom: 1px solid rgba(0, 0, 0, .15); */
+    display: flex;
+    align-items: center;
+    z-index: 500;
+    overflow: hidden;
+    -webkit-app-region: drag !important;
+    transition: .3s;
+}
+
+.navbar>.menu-strip{
+    width: max-content;
+    height: 100%;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: row;
+    -webkit-app-region: no-drag !important;
+    overflow: hidden;
+}
+
+.navbar>.menu-strip>a{
+    font-size: 13.5px;
+    height: calc(100% + 1px);
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center; justify-content: center;
+    padding-left: 10px; padding-right: 10px;
+}
+.navbar>.menu-strip>a:hover{
+    background-color: rgba(0, 0, 0, .05) !important;
+}
+
+.nvb-title{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 21px;
+    margin: 0; padding: 0;
+    background: linear-gradient(90deg, #d7dae3, #f1f1fb);
+    display: flex;
+    align-items: center; justify-content: center;
+    text-align: center;
+    /* padding-left: 10px; padding-right: 10px; */
+    z-index: 400;
+    pointer-events: none !important;
+}
+
+.nvb-title>p{
+    transform: translateY(1px);
+    margin: 0; padding: 0;
+    font-size: 13.5px;
+    color: black;
+    font-family: 'inter semibold';
+    text-decoration: none;
+    display: flex;
+    align-items: center; justify-content: center;
+    pointer-events: none !important;
+}
+
+.menu-strip-dropdown{
+    position: fixed;
+    top: 21px;
+    left: 0;
+    width: max-content; height: max-content;
+    margin: 0; padding: 0;
+    /* padding: 5px; */
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05);
+    z-index: 520;
+    display: none;
+}
+
+.menu-strip-dropdown>div{
+    font-size: 13.5px;
+    padding: 3px 30px 3px 7px;
+}
+.menu-strip-dropdown>div:hover{
+    background-color: rgb(225, 225, 225);
+}
+
+.btn-app{
+    position: fixed;
+    top: 0; right: 0;
+    width: max-content;
+    height: 21px;
+    margin: 0; padding: 0;
+    z-index: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    -webkit-app-region: no-drag !important;
+}
+
+.btn-app>div{
+    width: max-content;
+    height: 21px;
+    margin: 0; padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center; justify-content: center;
+}
+.btn-app>div:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.btn-app>div>img{
+    width: auto;
+    height: 21px;
+    margin: 0; padding: 0;
+    pointer-events: none;
+    padding-left: 1px; padding-right: 1px;
+}
+
+.menuStripMask{
+    position: fixed;
+    top: 21px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 21px);
+    margin: 0; padding: 0;
+    background-color: transparent;
+    z-index: 300;
+}

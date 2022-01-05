@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création d'un profil local · Went App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/title-bar.css">
+</head>
+<body>
+
+    <div class="ui-controller">
+        <div class="form">
+            <p class="title">Personnalisation</p>
+            <p id="one" class="content">Indiquez un nom d'utilisateur :</p>
+            <textarea id="username" cols="30" rows="1"></textarea>
+            <p id="two" class="content" style="margin-top: 20px;">Chargez un avatar :</p>
+            <div id="three" class="avatar-screen"></div>
+            <input type="file" id="avatar" accept="image/png, image/jpg">
+            <div id="btnSubmit" onclick="submitFromLogin()">Enregistrer</div>
+            <div id="true" class="feedback">Veuillez patienter</div>
+            <div id="error_missingusername" class="feedback">Indiquez un nom d'utilisateur</div>
+        </div>
+    </div>
+
+    <script src="../renderer.js"></script>
+    <script src="./renderer.js"></script>
+</body>
+</html>
