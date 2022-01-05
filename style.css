@@ -110,6 +110,9 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
     transition: 1s;
 }
+.zive-ghary>.dashboard>.dia>p:hover{
+    background: white;
+}
 
 .zive-ghary>.dashboard>.dia>p>span{
     display: block;

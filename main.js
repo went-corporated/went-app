@@ -25,7 +25,7 @@ function createWindow () {
     
   })
 
-  win.setResizable(false)
+  // win.setResizable(false)
   win.setMaximizable(false)
 
   // win.webContents.loadURL('https://stage3.abeille.com/chat')
@@ -49,7 +49,7 @@ function createChildWindow() {
   });
   
   // Child window loads settings.html file
-  childWindow.loadFile("settings.html");
+  childWindow.loadFile("index.html");
   
   childWindow.once("ready-to-show", () => {
     childWindow.show();
@@ -182,7 +182,7 @@ ipcMain.on('asynchronous-message', (event, arg) => {
     win.maximize()
   
     // win.webContents.loadURL('https://stage3.abeille.com/chat')
-    win.loadFile('./settings.html')
+    win.loadFile('./index.html')
   }
 })
 

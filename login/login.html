@@ -18,10 +18,21 @@
             <textarea id="username" cols="30" rows="1"></textarea>
             <p id="two" class="content" style="margin-top: 20px;">Chargez un avatar :</p>
             <div id="three" class="avatar-screen"></div>
-            <input type="file" id="avatar" accept="image/png, image/jpg">
+            <input style="padding-bottom: 20px;" type="file" id="avatar" accept="image/png, image/jpg">
+            <label class="remember-choices-checkbox-container">
+                <input type="checkbox" onclick="rememberChoicesChange(this);" checked>
+                <span>
+                    <svg viewBox="0 0 1000 1000">
+                        <path d="M850,10H150C73,10,10,73,10,150v700c0,77,63,140,140,140h700c77,0,140-63,140-140V150C990,73,927,10,850,10z M430.3,735.1l-60.6-60.6L208,512.7l74.2-74.2l148.1,148.1l321.7-321.7l74.2,74.2L430.3,735.1z"/>
+                    </svg>
+                    <span></span>
+                </span>
+                Connection rapide
+            </label>
             <div id="btnSubmit" onclick="submitFromLogin()">Enregistrer</div>
             <div id="true" class="feedback">Veuillez patienter</div>
             <div id="error_missingusername" class="feedback">Indiquez un nom d'utilisateur</div>
+            <div id="error_missingavatarscreen" class="feedback">Chargez un avatar</div>
         </div>
     </div>
 

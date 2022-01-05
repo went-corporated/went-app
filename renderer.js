@@ -35,12 +35,28 @@ function winReduce() {
 }
 
 let verifLogin = false;
+let verifLoginUsername = false;
+let verifLoginAvatar = false;
 
 function submitFromLogin() {
   if (document.getElementById('username').value === '') {
     document.getElementById('error_missingusername').style.display = 'flex';
+  } else {
+    verifLoginUsername = true;
+  }
+  if (window.getComputedStyle(document.getElementById('three'), null).getPropertyValue('display') === 'none') {
+    document.getElementById('error_missingavatarscreen').style.display = 'flex';
+  } else {
+    verifLoginAvatar = true;
+  }
+  if ((verifLoginUsername === true) && (verifLoginAvatar === true)) {
+    verifLogin = true;
   }
   if (verifLogin === true) {
+    if (localStorage.getItem('rememberChoices') === 'grantied') {
+      localStorage.setItem('usernameRemembered', document.getElementById('username').value);
+      localStorage.setItem('avatarUrlRemembered', localStorage.getItem('avatarUrl'));
+    }
     document.getElementById('one').style.display = 'none';
     document.getElementById('two').style.display = 'none';
     document.getElementById('three').style.display = 'none';
