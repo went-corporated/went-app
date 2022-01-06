@@ -43,6 +43,20 @@ document.getElementById('gotoMiddlepointFromDashboard').onclick = function (){
     setTimeout('okloaded()', 500);
 }
 
+document.getElementById('gotoOpennewsFromDashboard').onclick = function () {
+    document.querySelector('.dashboard').classList.add('hidden');
+    document.getElementById('opennewsIframe').classList.remove('hidden');
+    document.querySelector('.mask').style.zIndex = '30';
+    setTimeout('okloaded()', 500);
+}
+
+document.getElementById('gotoPoogleFromDashboard').onclick = function () {
+    document.querySelector('.dashboard').classList.add('hidden');
+    document.getElementById('poogleIframe').classList.remove('hidden');
+    document.querySelector('.mask').style.zIndex = '30';
+    setTimeout('okloaded()', 500);
+}
+
 function okloaded(){
     document.querySelector('.mask').style.zIndex = '5';
     document.querySelector('.identity').style.marginTop = '-100px';
