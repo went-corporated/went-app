@@ -163,6 +163,10 @@ ipcMain.on('asynchronous-message', (event, arg) => {
     app.quit()
   } else if (arg === 'winReduce') {
     win.minimize()
+  } else if (arg === 'emojiPanel') {
+    app.showEmojiPanel()
+  } else if (arg === 'version') {
+    app.getVersion()
   } else if (arg === 'wenClose') {
     win.close()
     win = new BrowserWindow({
