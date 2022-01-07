@@ -25,7 +25,7 @@ function createWindow () {
     
   })
 
-  // win.setResizable(false)
+  win.setResizable(false)
   win.setMaximizable(false)
 
   // win.webContents.loadURL('https://stage3.abeille.com/chat')

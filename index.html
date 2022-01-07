@@ -1,3 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/title-bar.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <div class="ui-controller">
+        <div class="navbar">
+            <div class="menu-strip">
+                    <a id="fileMenuStrip" class="btn-open-stripen-dropdown">Fichier</a>
+                    <a id="helpMenuStrip" class="btn-open-stripen-dropdown">Aide</a>
+            </div>
+        </div>
+
+        <div id="file_stripen_dropdown" class="menu-strip-dropdown">
+                <div onclick="goToSettingsWindow();">Préférences</div>
+                <div onclick="location.href = 'index.html';">Dashboard</div>
+                <div onclick="closeApp();">Quitter</div>
+        </div>
+
+        <div id="help_stripen_dropdown" class="menu-strip-dropdown">
+                <div>À propos</div>
+        </div>
+
+        <div class="nvb-title"><p>Dashboard</p></div>
+
+        <div class="btn-app">
+            <div class="reduce" onclick="winReduce();" title="Réduire"><img src="./assets/icones/minimize_window_48px.png"></div>
+            <div class="quit" onclick="closeApp();" title="Quitter"><img src="./assets/icones/close_window_48px.png"></div>
+        </div>
+
+        <div class="sub-controller">
+            <div class="identity">
+                <div class="avatar"></div>
+                <p class="username"></p>
+            </div>
+            <div class="zive-ghary">
+                <div class="dashboard">
+                    <div class="change-dia-container">
+                        <div id="changeDiaBtnLeft" class="arrow-left" onclick="carrouselToLeft();">
+                            <img style="transform: rotate(90deg);" src="./assets/icones/down-chevron.png">
+                        </div>
+                        <div changeDiaBtnRight class="arrow-right" onclick="carrouselToRight();">
+                            <img style="transform: rotate(-90deg);" src="./assets/icones/down-chevron.png">
+                        </div>
+                    </div>
+                    <div class="dia dia-one">
+                        <p id="gotoMiddlepointFromDashboard">
+                            Middle Point
+                            <span>Le chat anonyme ultra rapide made by wentLab</span>
+                        </p>
+                    </div>
+                    <div class="dia dia-two">
+                        <p id="gotoOpennewsFromDashboard">
+                            Open News
+                            <span>Le journal dématérialisé qui fait le buzz</span>
+                        </p>
+                    </div>
+                    <div class="dia dia-three">
+                        <p id="gotoPoogleFromDashboard">
+                            Poogle
+                            <span>Soutenez le commerce locale : utilisez Poogle !</span>
+                        </p>
+                    </div>
+                </div>
+                <div id="middlepointIframe" class="hidden">
+                    <iframe src="https://stage3.abeille.com/chat" frameborder="0"></iframe>
+                </div>
+                <div id="opennewsIframe" class="hidden">
+                    <iframe src="https://stage3.abeille.com/news" frameborder="0"></iframe>
+                </div>
+                <div id="poogleIframe" class="hidden">
+                    <iframe src="https://stage3.abeille.com/poogle" frameborder="0"></iframe>
+                </div>
+                <div id="pnodlnhIframe" class="hidden">
+                    <iframe src="https://stage3.abeille.com/ent" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="mask"></div>
+        <div class="menuStripMask" style="display: none;"></div>
+
+    </div>
+
+    <script src="./script/title-bar.js"></script>
+    <script src="./renderer.js"></script>
+    <script src="./carrousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -57,14 +156,14 @@
                             <span>Le chat anonyme ultra rapide made by wentLab</span>
                         </p>
                     </div>
-                    <div id="gotoOpennewsFromDashboard" class="dia dia-two">
-                        <p>
+                    <div class="dia dia-two">
+                        <p id="gotoOpennewsFromDashboard">
                             Open News
                             <span>Le journal dématérialisé qui fait le buzz</span>
                         </p>
                     </div>
-                    <div id="gotoPoogleFromDashboard" class="dia dia-three">
-                        <p>
+                    <div class="dia dia-three">
+                        <p id="gotoPoogleFromDashboard">
                             Poogle
                             <span>Soutenez le commerce locale : utilisez Poogle !</span>
                         </p>
