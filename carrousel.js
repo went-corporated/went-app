@@ -24,12 +24,14 @@ function carrouselToRight(){
 }
 
 function checkTeleport(){
-    if (txPhRight === -400) {
+    if (txPhRight === -500) {
+        carrouselToLeft();
         carrouselToLeft();
         carrouselToLeft();
         carrouselToLeft();
     }
     if (txPhLeft === 200) {
+        carrouselToRight();
         carrouselToRight();
         carrouselToRight();
         carrouselToRight();
@@ -53,6 +55,13 @@ document.getElementById('gotoOpennewsFromDashboard').onclick = function () {
 document.getElementById('gotoPoogleFromDashboard').onclick = function () {
     document.querySelector('.dashboard').classList.add('hidden');
     document.getElementById('poogleIframe').classList.remove('hidden');
+    document.querySelector('.mask').style.zIndex = '30';
+    setTimeout('okloaded()', 500);
+}
+
+document.getElementById('gotoFilereaderFromDashboard').onclick = function () {
+    document.querySelector('.dashboard').classList.add('hidden');
+    document.getElementById('filereaderIframe').classList.remove('hidden');
     document.querySelector('.mask').style.zIndex = '30';
     setTimeout('okloaded()', 500);
 }

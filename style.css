@@ -136,6 +136,12 @@
     background-image: url('https://th.bing.com/th/id/R.47f144a35cdf8224580b91bc47e94aef?rik=dHkzUmLIjD%2bOqg&pid=ImgRaw&r=0');
 }
 
+.dia-four{
+    position: absolute;
+    left: 300%;
+    background-image: url('https://th.bing.com/th/id/R.47f144a35cdf8224580b91bc47e94aef?rik=dHkzUmLIjD%2bOqg&pid=ImgRaw&r=0');
+}
+
 .change-dia-container{
     position: fixed;
     top: calc(50% - 40px);
