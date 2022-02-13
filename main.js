@@ -3,6 +3,8 @@ const path = require('path')
 // const updater = require("electron-updater");
 // const autoUpdater = updater.autoUpdater;
 
+// if(require('electron-squirrel-startup')) return;
+
 let progressInterval
 let tray
 let win
@@ -12,7 +14,7 @@ let mainWindow
 function createWindow () {
   win = new BrowserWindow({
     width: 400,
-    height: 588,
+    height: 555,
     show: true,
     icon: __dirname + '/img/android-icon-192x192.png',
     webPreferences: {

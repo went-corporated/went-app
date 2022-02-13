@@ -121,25 +121,25 @@
 .dia-one{
     position: absolute;
     left: 0;
-    background-image: url('https://th.bing.com/th/id/R.2d62f18e89cbca56d71fce07ab66299a?rik=qiU0pIGAWPkOsQ&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20200116%2f9b260ac08c0f4bbea605eed2a9c769c9.jpeg&ehk=Yi36eyzabtx5CosptHZOWyLXhtZ0WWbbjxQqR3FsNiU%3d&risl=&pid=ImgRaw&r=0');
+    background-image: url('./assets/4676171.jpg');
 }
 
 .dia-two{
     position: absolute;
     left: 100%;
-    background-image: url('https://www.mercedes-benz-werkstatt.at/de/getpic/TAG4bUcq29KNY?.jpg');
+    background-image: url('./assets/4676135.jpg');
 }
 
 .dia-three{
     position: absolute;
     left: 200%;
-    background-image: url('https://th.bing.com/th/id/R.47f144a35cdf8224580b91bc47e94aef?rik=dHkzUmLIjD%2bOqg&pid=ImgRaw&r=0');
+    background-image: url('./assets/3167955.jpg');
 }
 
 .dia-four{
     position: absolute;
     left: 300%;
-    background-image: url('https://th.bing.com/th/id/R.47f144a35cdf8224580b91bc47e94aef?rik=dHkzUmLIjD%2bOqg&pid=ImgRaw&r=0');
+    background-image: url('./assets/1902570.jpg');
 }
 
 .change-dia-container{

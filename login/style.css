@@ -125,7 +125,6 @@ textarea:focus{
 .remember-choices-checkbox-container{
     width: 100%;
     height: max-content;
-    border: 3px dashed red;
     display: flex;
     align-items: center;
 }
