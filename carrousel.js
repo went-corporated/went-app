@@ -39,6 +39,7 @@ function checkTeleport(){
 }
 
 document.getElementById('gotoMiddlepointFromDashboard').onclick = function (){
+    document.querySelector('.identity').style = 'background-color: rgb(255, 255, 255) !important; backdrop-filter: none;';
     document.querySelector('.dashboard').classList.add('hidden');
     document.getElementById('middlepointIframe').classList.remove('hidden');
     document.querySelector('.mask').style.zIndex = '30';
@@ -46,6 +47,7 @@ document.getElementById('gotoMiddlepointFromDashboard').onclick = function (){
 }
 
 document.getElementById('gotoOpennewsFromDashboard').onclick = function () {
+    document.querySelector('.identity').style = 'background-color: rgb(255, 255, 255) !important; backdrop-filter: none;';
     document.querySelector('.dashboard').classList.add('hidden');
     document.getElementById('opennewsIframe').classList.remove('hidden');
     document.querySelector('.mask').style.zIndex = '30';
@@ -53,6 +55,7 @@ document.getElementById('gotoOpennewsFromDashboard').onclick = function () {
 }
 
 document.getElementById('gotoPoogleFromDashboard').onclick = function () {
+    document.querySelector('.identity').style = 'background-color: rgb(255, 255, 255) !important; backdrop-filter: none;';
     document.querySelector('.dashboard').classList.add('hidden');
     document.getElementById('poogleIframe').classList.remove('hidden');
     document.querySelector('.mask').style.zIndex = '30';
